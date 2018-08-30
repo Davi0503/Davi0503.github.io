@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       
+
+}
+
+@keyframes fx-intro {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fx-intro 2s;
+}
+
+@keyframes fx-page-swipe-right {
+    0% {
+        z-index: 3;
+        transform: translateX(0px);
+    }
+
+    49% {
+        z-index: 3;
+        transform: translateX(60px);
+    }
+
+    60% {
+        z-index: 1;
+    }
+
+    100% {
+        z-index: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fx-page-swipe-left {
+    
+    0% {
+        z-index: 3;
+        transform: translateX(0px);
+    }
+    49% {
+        z-index: 3;
+        transform: translateX(-60px);
+    }
+    60%{
+        z-index: 1;
+    }
+    100%{
+        z-index: 1;
+        transform: translateX(0px);
+    }
+
+    /* from {
+        background-color: black;
+    }
+
+    to {
+        background-color: white;
+    } */
+
+}
+
+.txt_main_for{
+    z-index: 2;
+}
+
+.formacao:hover > .foto_for{
+    animation: fx-page-swipe-left .2s linear;
+}
+
+.txt_main_ex {
+    z-index: 2  ;
+}
+
+.txt_main_ex:hover ~ .foto {
+    animation: fx-page-swipe-right linear 0.5s 1 normal forwards;
+}
+
+
+body{
+    font-size: 20px;
+}
+
+.banner{
+
+    background: url("../IMG/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+}
+
+.itens_banner{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;    
+}
+.perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.perfil img{
+    width: 150px;
+    border-radius: 50%;
+    transform: translateY(-100px);
+    border: 10px solid  #333333;
+}
+.experiencia {
+    width: 100%;
+    height: 45em;
+    background-color: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.txt_main_ex{
+    background-color: #B7BBBC;
+    height: 18em;
+    width: 31em;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+        
+    box-shadow: 5px 5px 5px #1819197c;    
+}
+.txt_main_ex h2{
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.txt_main_ex p{
+    margin: 0.5em;
+}
+
+
+.foto img{
+    width: 500px;
+    z-index: 3;
+    transform: translate(-3rem, 11rem);
+    box-shadow: 5px 5px 5px #1819197c;
+}
+
+.formacao{
+    height: 45em;
+    width: 100%;
+    background-color: #D0CABB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.txt_main_for{
+    background-color: #CCBC9A;
+    height: 18em;
+    width: 31em;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+        
+    box-shadow: 5px 5px 5px #1819197c;    
+}
+.foto_for img{
+    width: 500px;
+    z-index: 3;
+    transform: translate(4rem, 15rem);
+    box-shadow: 5px 5px 5px #1819197c;
+    
+}
+.txt_main_for h2{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+.txt_main_for p {
+    margin: 1rem;
+}
+
+.portfolio{
+    background-color: #333333;
+    height: 30em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.portfolio h2{
+    margin: 1em;
+    color: aliceblue;
+    
+}
+.foto_port img{
+    width: 200px;
+    
+}
+.portfolio_item{
+    width: 80%;
+    margin-top: 2em;
+    display: flex;
+    
+    
+}
+.descricao{
+    color: aliceblue;
+}
+.check{
+    display: flex;
+   
+    align-items: center;
+    flex-direction: column;
+}
+.rod{
+    height: 10em;
+    width: 100%;
+    background-color: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+
+}
+.itens_rod{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.skills{
+    background-color: #E5E5E5;
+    height: 36em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+}
+.skills h2{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.skill_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 1em;
+}
+.redes{
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+    font-size: 40px;
+    align-items: center;
+}
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+@media(max-width:1240px){
+    .txt_main_ex{
+        width: 24em;
+    }
+    .txt_main_for{
+        width: 22em;
+    }
+    .foto img{
+        width: 400px;
+        transform: translate(-8rem, 15rem);
+    }
+    .foto_for img{
+        width: 400px;
+        transform: translate(4rem, 14rem);              
+    }
+}
+@media(max-width:1000px){
+    .txt_main_ex{
+        width: 20em;
+    }
+    .txt_main_for{
+        width: 20em;
+    }
+    .foto img{
+        width: 350px;
+        transform: translate(-8rem, 15rem);
+    }
+    .foto_for img{
+        width: 350px;
+        transform: translate(4rem, 14rem);              
+    }
+}
+
+@media(max-width:720px){
+    body{
+        font-size: 19px;
+    }
+    .itens_banner h1{
+        margin-left: 1em;
+    }
+    .foto img{
+        display: none;
+    }
+    .foto_for img{
+        display: none;             
+    }
+    .skills{
+        height: 53em;
+    }
+    .skill_item{
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .skill_item h3{
+        margin-bottom: 1em;
+
+    }
+    .skill_item progress{
+        width: 90%;
+    }
+    
+}
+
+@media(max-width:450px){
+    
+    body{
+        font-size: 17px;
+    }
+    .itens_banner h1{
+        margin-left: 1em;
+    }
+    .txt_main_ex{
+        width: 16em;
+        
+    }    
+    
+    .txt_main_for{
+        width: 16em;
+        
+    }
+    .foto img{
+        display: none;
+    }
+    .foto_for img{
+        display: none;             
+    }
+    .itens_rod{
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio{
+        height: 40em;          
+    }
+    .skills{
+        height: 53em;
+    }
+    .skill_item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .skill_item progress{
+        width: 90%;
+    }
+    .skill_item h3{
+        margin-bottom: 1em;
+
+    }
+    .itens_rod p{
+        margin-bottom: 1em;
+    }
+    
+}
