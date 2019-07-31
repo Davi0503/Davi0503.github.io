@@ -28,7 +28,7 @@
 }
 
 .back-blue{
-    background-color: #003459;
+    background-color: #0f1626;
 }
 
 .back-casca{
@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;    
-    background-color: #00171F;     
+    background-color: #0f1626;     
 }
 
 .header-body h1, h3{
