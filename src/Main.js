@@ -77,7 +77,7 @@ function FindNamesLine(linha){
 function CheckarStatus(nameList){
     var listaChar;
     let verificados = [];
-    $.get("https://api.tibiadata.com/v2/world/Belobra.json", function(result){
+    $.get("https://api.tibiadata.com/v4/world/Venebra.json", function(result){
         listaChar = result.world.players_online;
         var carta = $('.carta').val().toLowerCase();
 
