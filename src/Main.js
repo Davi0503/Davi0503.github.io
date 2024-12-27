@@ -77,8 +77,10 @@ function FindNamesLine(linha){
 function CheckarStatus(nameList){
     var listaChar;
     let verificados = [];
-    $.get("https://api.tibiadata.com/v4/world/Venebra.json", function(result){
-        listaChar = result.world.players_online;
+    console.log("chamada api")
+    $.get("https://api.tibiadata.com/v4/world/venebra", function(result, status){
+        debugger
+        listaChar = result.world.online_players;
         var carta = $('.carta').val().toLowerCase();
 
         $.each(listaChar, function(i, v){
@@ -86,19 +88,6 @@ function CheckarStatus(nameList){
                 verificados.push(v);
             }
         });
-        
-        
-        // $.each(listaChar, function(i, v){
-        //     for (let index = 0; index < nameList.length; index++) {
-               
-        //         let nameSpace = nameList[index].replace("+", ' ');
-        //         let nomeCharLog = v.name.toLowerCase();
-        //         if(nomeCharLog == nameSpace){
-        //             verificados.push(v);
-        //         }
-
-        //     }
-        // });
         MontarTable(verificados);
     });
 

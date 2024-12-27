@@ -6,7 +6,7 @@
 body{
     display: flex;
     justify-content: center;
-    background-image:url("https://static.tibia.com/images/global/header/background-artwork.jpg");
+    background-image:url("./image/background-artwork.webp");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
